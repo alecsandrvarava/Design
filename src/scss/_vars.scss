@@ -1,0 +1,19 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+	// base
+	--font-family: "Inter", sans-serif;
+	--font-title: "ClashGrotesk-Regular", sans-serif;
+	--content-width: 1170px;
+	--container-offset: 15px;
+	--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+	// colors
+	--white: #fff;
+	--bgwhite: #e5e5e5;
+
+	--fw-300: 300;
+	--fw-400: 300;
+}
+
+// $font-body: "ClashGrotesk-Regular", sans-serif;
