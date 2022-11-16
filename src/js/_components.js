@@ -1,5 +1,6 @@
 import "./components/home";
 import "./components/switch";
+import "./components/parallax";
 
 // setTimeout(() => {
 //   homeBody.classList.add("active");

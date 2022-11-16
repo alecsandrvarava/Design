@@ -1,11 +1,8 @@
-// @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 
 @font-face {
 	font-family: "ClashGrotesk-Regular";
-	src: url("./../fonts/ClashGrotesk-Regular.woff2") format("woff2"),
-		url("./../fonts/ClashGrotesk-Regular.woff") format("woff"),
-		url("./../fonts/ClashGrotesk-Regular.ttf") format("truetype");
+	src: url("../fonts/ClashGrotesk-Regular.woff2") format("woff2");
 	font-weight: 400;
 	font-display: swap;
 	font-style: normal;

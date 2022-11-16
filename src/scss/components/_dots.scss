@@ -1,0 +1,33 @@
+.dots {
+	&__body {
+		display: flex;
+		width: 200vw;
+		position: relative;
+		z-index: 1;
+		margin-bottom: 10vw;
+		mix-blend-mode: exclusion;
+	}
+
+	&__dot {
+		width: 12vw;
+		height: 12vw;
+		margin-right: 1vw;
+		flex: 0 0 auto;
+		border-radius: 50%;
+		background-color: #1f1f1f;
+		transform: perspective(373px);
+		transform-origin: 50% 50%;
+		cursor: pointer;
+	}
+
+	&__dot-out {
+		width: 18vw;
+		border-radius: 150px;
+		background-color: #fff;
+		height: 12vw;
+		margin-right: 1vw;
+		transform: perspective(373px);
+		transform-origin: 50% 50%;
+		cursor: pointer;
+	}
+}

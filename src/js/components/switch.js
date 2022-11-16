@@ -9,13 +9,13 @@ export default function home() {
   // switch.addEventListener("click", home);
   switchBody.addEventListener("click", (e) => {
     homeBody.classList.toggle("bg");
+    topBubbl.classList.toggle("bg");
+    makeBody.classList.toggle("bg");
     switchDot.classList.toggle("active");
   });
   //
 }
 home();
-//  const blockTitle = document.querySelector(".block_title");
-// const switchDot = document.querySelector(".switch_dot");
-// const topBubble = document.querySelector(".topBubble");
-
-// topBubble.classList.toggle("bg");
+let date = new Date();
+const footerDatе = document.getElementById("footerDatе");
+footerDatе.innerHTML = date.getFullYear();
