@@ -2,11 +2,14 @@
   background-color: var(--black);
   position: relative;
   padding-bottom: 50px;
+  &.bg {
+    background-color: var(--white);
+  }
   &__p1 {
     position: relative;
     z-index: 1;
     padding-left: 5%;
-    color: #fff;
+    color: var(--white);
     font-size: 13px;
     line-height: 1.1;
     transform: translateY(300%);
@@ -24,7 +27,7 @@
     padding-right: 2vw;
     position: relative;
     z-index: 1;
-    color: #fff;
+    color: var(--white);
     font-size: 16px;
     line-height: 1.1;
     letter-spacing: -0.027vw;
@@ -44,7 +47,7 @@
   &__p3 {
     position: relative;
     z-index: 1;
-    color: #fff;
+    color: var(--white);
     font-size: 11.5vw;
     line-height: 0.9vw;
     letter-spacing: 0.01vw;

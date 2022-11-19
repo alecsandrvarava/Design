@@ -5,104 +5,112 @@
 
 <body class="page__body">
   <div class="site-container">
+    <div id=loadBlock class="loader"></div>
+    <!-- <div id=loadBlock class="load-block">
+      <div></div>
+      <div class="load-circle"></div>
+    </div> -->
     @include('partials/header.html')
     <main class="main">
-			<section class="switch">
-				<div id="switchBody" class="switch__body">
-					<div id="switchDot" class="switch__dot"></div>
-				</div>
-			</section>
-			<section class="home">
-				<div id="homeBody" class="home__body">
-					<div class="home__row-1">
-						<div class="home__row-1-img">
-							<img class="home-img" src="./img/home_1.jpeg" alt="gif">
-						</div>
-						<p class="home__row-1-text">HIGH</p>
-					</div>
-					<div class="home__row-2">
-						<p class="home__row-2-text">END</p>
-						<div class="home__row-2-img">
-							<img class="home-img" src="./img/home_1.jpeg" alt="img" />
-						</div>
-						<div class="home__row-2-text-2">
-							<p>* Great design services -</p>
-							<p>without the pretentiousness.</p>
-						</div>
-					</div>
-					<div class="home__row-3">
-						<div class="home__row-3-img">
-							<img class="home-img" src="./img/home_1.jpeg" alt="img" />
-						</div>
-						<p class="home__row-3-text">DIGITAL</p>
-						<div class="home__row-3-img-2">
-							<img class="home-img" src="./img/home_1.jpeg" alt="img" />
-						</div>
-					</div>
-					<div class="home__row-4">
-						<p class="home__row-4-text">EXPERIENCES</p>
-						<div class="home__row-4-img">
-							<img class="home-img-2" src="./img/arrow-down.svg" alt="img" />
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="demo">
-				<div class="demo__body">
-					<div class="demo__container">
-						<video src="./video/demo.mp4"></video>
-						<div class="demo__bg"></div>
-					</div>
-				</div>
-			</section>
-			<section class="well">
-				<div class="well__body">
-					<div id="topBubbl" class="well__top-bubbl"></div>
-				</div>
-				<div class="well__value">
-					<div class="well__text-1">We’ll</div>
-					<div class="well__text-2">help you</div>
-					<div class="well__text-3">Stand out</div>
-				</div>
-			</section>
-			<section class="dots">
-				<div id="dots" class="dots__body">
-					<div class="dots__dot"></div>
-					<div class="dots__dot"></div>
-					<div class="dots__dot"></div>
-					<div class="dots__dot"></div>
-					<div class="dots__dot"></div>
-					<div class="dots__dot-out"></div>
-					<div class="dots__dot"></div>
-					<div class="dots__dot"></div>
-					<div class="dots__dot"></div>
-					<div class="dots__dot"></div>
-					<div class="dots__dot"></div>
-					<div class="dots__dot"></div>
-				</div>
-			</section>
-			<section class="make">
-				<div id="makeBody" class="make__body">
-					<div class="make__container">
-						<div class="make__text-1">& make&nbsp; <span>&nbsp;all</span></div>
-						<div class="make__text-2">your dreams</div>
-						<div class="make__text-3">come true*</div>
-					</div>
-				</div>
-			</section>
-			<section class="well-bottom">
-				<div id="wellP1" class="well-bottom__p1">
-					<p>* As long as your dreams revolve around something like;</p>
-					<p>being the proud owner of a spectacular website.</p>
-				</div>
-				<div id="wellP2" class="well-bottom__p2">
-					<p>	&nbsp; &nbsp; &nbsp; &nbsp; Jomor Design is a design practice focused on digital experiences. With every single one of our clients, we bring forth a deep passion for creative problem solving — which is what we deliver in the form of custom and memorable experiences.</p>
-				</div>
-				<div id="wellP3" class="well-bottom__p3">
-					<p>featured</p>
-					<p>work</p>
-				</div>
-			</section>
+      <section class="switch">
+        <div id="switchBody" class="switch__body">
+          <div id="switchDot" class="switch__dot"></div>
+        </div>
+      </section>
+      <section class="home">
+        <div id="homeBody" class="home__body">
+          <div class="home__row-1">
+            <div class="home__row-1-img">
+              <img class="gif home-img" src="./img/home_gif1.gif" alt="gif">
+            </div>
+            <p class="home__row-1-text">HIGH</p>
+          </div>
+          <div class="home__row-2">
+            <p class="home__row-2-text">END</p>
+            <div class="home__row-2-img">
+              <img class="gif home-img" src="./img/home_gif2.gif" alt="gif">
+            </div>
+            <div class="home__row-2-text-2">
+              <p>* Great design services -</p>
+              <p>without the pretentiousness.</p>
+            </div>
+          </div>
+          <div class="home__row-3">
+            <div class="home__row-3-img">
+              <img class="gif home-img" src="./img/home_gif3.gif" alt="gif">
+            </div>
+            <p class="home__row-3-text">DIGITAL</p>
+            <div class="home__row-3-img-2">
+              <img class="gif home-img" src="./img/home_gif4.gif" alt="gif">
+            </div>
+          </div>
+          <div class="home__row-4">
+            <p class="home__row-4-text">EXPERIENCES</p>
+            <div class="home__row-4-img">
+              <img class="gif home-img-2" src="./img/arrow-down.svg" alt="img" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="demo">
+        <div class="demo__body">
+          <div class="demo__container">
+            <video autoplay muted loop
+              src="https://assets.website-files.com/6148d60a98a3dba79b2d6a81/6148d60a98a3db7ade2d6be8_Jomor-Design-REEL-3-transcode.mp4"></video>
+            <div class="demo__bg"></div>
+          </div>
+        </div>
+      </section>
+      <section class="well">
+        <div class="well__body">
+          <div id="topBubbl" class="well__top-bubbl"></div>
+        </div>
+        <div class="well__value">
+          <div class="well__text-1">We’ll</div>
+          <div class="well__text-2">help you</div>
+          <div class="well__text-3">Stand out</div>
+        </div>
+      </section>
+      <section class="dots">
+        <div id="dots" class="dots__body">
+          <div class="dots__dot"></div>
+          <div class="dots__dot"></div>
+          <div class="dots__dot"></div>
+          <div class="dots__dot"></div>
+          <div class="dots__dot"></div>
+          <div class="dots__dot-out"></div>
+          <div class="dots__dot"></div>
+          <div class="dots__dot"></div>
+          <div class="dots__dot"></div>
+          <div class="dots__dot"></div>
+          <div class="dots__dot"></div>
+          <div class="dots__dot"></div>
+        </div>
+      </section>
+      <section class="make">
+        <div id="makeBody" class="make__body">
+          <div class="make__container">
+            <div class="make__text-1">& make&nbsp; <span>&nbsp;all</span></div>
+            <div class="make__text-2">your dreams</div>
+            <div class="make__text-3">come true*</div>
+          </div>
+        </div>
+      </section>
+      <section class="well-bottom">
+        <div id="wellP1" class="well-bottom__p1">
+          <p>* As long as your dreams revolve around something like;</p>
+          <p>being the proud owner of a spectacular website.</p>
+        </div>
+        <div id="wellP2" class="well-bottom__p2">
+          <p> &nbsp; &nbsp; &nbsp; &nbsp; Jomor Design is a design practice focused on digital experiences. With every
+            single one of our clients, we bring forth a deep passion for creative problem solving — which is what we
+            deliver in the form of custom and memorable experiences.</p>
+        </div>
+        <div id="wellP3" class="well-bottom__p3">
+          <p>featured</p>
+          <p>work</p>
+        </div>
+      </section>
       <section class="slider">
         <div class="slider__item">
           <a style="background: url(./img/slider_01.jpg);" id="sliderLink1" class="slider__link parallax" href="#">
@@ -155,6 +163,7 @@
       </section>
     </main>
     @include('partials/footer.html')
+
     <!-- @include('html/h1.html') пример include -->
   </div>
 </body>

@@ -5,12 +5,14 @@
 
 export default function home() {
   // const homeBody = document.getElementById("#homeBody");
-
+  const wellBottom = document.querySelector(".well-bottom");
   // switch.addEventListener("click", home);
   switchBody.addEventListener("click", (e) => {
     homeBody.classList.toggle("bg");
     topBubbl.classList.toggle("bg");
     makeBody.classList.toggle("bg");
+    footerBubbl.classList.toggle("bg");
+    wellBottom.classList.toggle("bg");
     switchDot.classList.toggle("active");
   });
   //

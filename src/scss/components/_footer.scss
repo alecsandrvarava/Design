@@ -5,6 +5,9 @@
   &__bubbl {
     position: relative;
     z-index: 0;
+    &.bg .footer__bottom-bubbl {
+      background-color: var(--black);
+    }
   }
 
   &__bottom-bubbl {
@@ -16,12 +19,12 @@
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     background-color: var(--bgwhite);
-    &.bg {
-      background-color: var(--black);
-    }
   }
   &__body {
+    mix-blend-mode: exclusion;
     display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
     position: relative;
     z-index: 1;
   }
@@ -33,6 +36,7 @@
   }
 }
 .about-footer {
+  margin-bottom: 13vw;
   &__body {
     display: flex;
     flex-direction: column;
@@ -40,77 +44,165 @@
   &__link {
     @media (min-width: 992px) {
       &:hover img {
-        transform: rotate(-135deg);
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(-135deg);
+        transform-style: preserve-3d;
+      }
+      &:hover .about-footer__img::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+      &:hover .about-footer__text {
+        opacity: 0.6;
+      }
+      &:hover .about-footer__text-bottom {
+        opacity: 0.6;
       }
     }
-  }
-  &__top {
-    // margin-bottom: 10px;
   }
 
   &__top {
     display: flex;
     align-items: center;
-    background-color: var(--bgwhite);
+    color: var(--white);
   }
 
   &__text {
     font-size: 8.3vw;
-    // line-height: 0.9vw;
     font-weight: 400;
     letter-spacing: 0.01vw;
     text-transform: uppercase;
+    opacity: 1;
+    transition: 0.4s all;
   }
 
   &__img {
     width: 10vw;
     height: 5vw;
-
+    display: flex;
+    position: relative;
+    mix-blend-mode: exclusion;
+    &::after {
+      content: "";
+      top: 50%;
+      left: 50%;
+      transition: 0.4s all;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      z-index: 1;
+      width: 5vw;
+      height: 0.4vw;
+      background-color: var(--white);
+    }
     & img {
       width: 100%;
       height: 100%;
       object-fit: contain;
       mix-blend-mode: exclusion;
-      transform: rotate(-90deg);
       transform-style: preserve-3d;
-      transition: 0.3s all;
+      transition: 0.4s all;
+      transform: rotateX(88deg) rotateY(0deg) rotateZ(-90deg);
+      transform-style: preserve-3d;
     }
   }
 
   &__bottom {
     display: flex;
     align-items: center;
-    background-color: var(--bgwhite);
-    @media (min-width: 992px) {
-      &:hover img {
-        transform: rotate(-135deg);
-      }
-    }
+    color: var(--white);
   }
 
   &__text-bottom {
     font-size: 8.3vw;
-    // line-height: 0.9vw;
     font-weight: 400;
     letter-spacing: 0.01vw;
     text-transform: uppercase;
     font-style: italic;
     font-family: var(--font-title);
+    opacity: 1;
+    transition: 0.4s all;
   }
 }
 .contacts-footer {
+  padding: 0 15px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  column-gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+  @media (min-width: 768px) {
+    padding: 0 15px 0px 15px;
+    flex-direction: row;
+  }
+  @media (min-width: 992px) {
+    padding: 0 15px 30px 15px;
+  }
+
   &__logo {
+    display: flex;
+    @include adaptive-value("font-size", 24, 15, 320, 1);
+    color: var(--white);
+    line-height: 1em;
+    text-transform: uppercase;
   }
 
   &__text {
+    // margin-right: -20px;
+    @media (min-width: 768px) {
+      margin-right: 0px;
+    }
   }
 
   &__end {
+    font-size: 150px;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    opacity: 0.15;
+    margin-top: 25px;
+    @include adaptive-value("margin-left", -20, -40, 320, 1);
+    @include adaptive-value("margin-right", 200, -40, 320, 1);
+
+    @media (min-width: 768px) {
+      opacity: 1;
+      margin-left: 0px;
+      margin-right: 0px;
+      padding-right: 50px;
+      font-size: 22vw;
+    }
   }
 
   &__text-bottom {
   }
 
   &__bottom {
+    @include adaptive-value("font-size", 16, 10, 320, 1);
+    margin-top: 50px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: space-between;
+    transition: 0.3s all;
+
+    & a {
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+    & p {
+      opacity: 0.8;
+    }
+    @media (min-width: 992px) {
+      & a:hover {
+        opacity: 1;
+      }
+    }
+
+    @media (min-width: 768px) {
+      margin-top: 30px;
+      column-gap: 20px;
+    }
+    @media (min-width: 992px) {
+      margin-top: 60px;
+    }
   }
 }
