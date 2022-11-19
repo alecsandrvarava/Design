@@ -37,6 +37,15 @@
 }
 .about-footer {
   margin-bottom: 13vw;
+  top: -30px;
+  position: relative;
+  @media (min-width: 768px) {
+    top: -70px;
+  }
+  @media (min-width: 992px) {
+    position: static;
+  }
+
   &__body {
     display: flex;
     flex-direction: column;
@@ -122,14 +131,14 @@
   }
 }
 .contacts-footer {
-  padding: 0 15px 0px 15px;
+  padding: 0 15px 20px 15px;
   display: flex;
   flex-direction: column;
   column-gap: 20px;
   justify-content: space-between;
   width: 100%;
   @media (min-width: 768px) {
-    padding: 0 15px 0px 15px;
+    padding: 0 15px 20px 15px;
     flex-direction: row;
   }
   @media (min-width: 992px) {

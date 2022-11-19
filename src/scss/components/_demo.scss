@@ -9,17 +9,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: calc(100vh + 30vh);
+    margin-top: 90vh;
     @media (min-width: 768px) {
       padding: 8em 2em;
+      margin-top: 100vh;
     }
   }
 
   &__container {
     position: relative;
     overflow: hidden;
-    width: 85vw;
-    height: 46vw;
+    width: 90vw;
+    height: 50vw;
     max-height: 610px;
     max-width: 1100px;
     margin-right: auto;

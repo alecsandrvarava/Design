@@ -173,8 +173,17 @@ function mouseMove() {
     aboutFooterTop.getBoundingClientRect().top -
     innerHeight;
   if (window.pageYOffset >= aboutFooterTopHeight) {
-    aboutFooterTop.style.marginLeft = `${-window.pageYOffset * 0.1}px`;
-    aboutFooterBottom.style.marginLeft = `${window.pageYOffset * 0.1 - 1500}px`;
+    if (innerWidth > 992) {
+      aboutFooterTop.style.marginLeft = `${-window.pageYOffset * 0.1}px`;
+      aboutFooterBottom.style.marginLeft = `${
+        window.pageYOffset * 0.1 - 1500
+      }px`;
+    } else if (innerWidth < 992) {
+      aboutFooterTop.style.marginLeft = `${-window.pageYOffset * 0.1}px`;
+      aboutFooterBottom.style.marginLeft = `${
+        window.pageYOffset * 0.1 - 800
+      }px`;
+    }
   }
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
